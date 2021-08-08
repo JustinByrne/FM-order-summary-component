@@ -18,6 +18,10 @@ module.exports = {
       fontFamily: {
         'red-hat-display': 'Red Hat Display, sans-serif',
       },
+      backgroundImage: {
+        mobile: "url('./images/pattern-background-mobile.svg')",
+        desktop: "url('./images/pattern-background-desktop.svg')",
+      }
     },
   },
   variants: {
