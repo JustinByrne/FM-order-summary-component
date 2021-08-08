@@ -875,8 +875,18 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.drop-shadow-sm {
+  --tw-drop-shadow: drop-shadow(0 1px 1px rgba(0,0,0,0.05));
+  filter: var(--tw-filter);
+}
+
 .drop-shadow-lg {
   --tw-drop-shadow: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.04)) drop-shadow(0 4px 3px rgba(0, 0, 0, 0.1));
+  filter: var(--tw-filter);
+}
+
+.drop-shadow-xl {
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgba(0, 0, 0, 0.03)) drop-shadow(0 8px 5px rgba(0, 0, 0, 0.08));
   filter: var(--tw-filter);
 }
 
@@ -884,9 +894,54 @@ video {
   filter: var(--tw-filter);
 }
 
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
+}
+
+.hover\:bg-blue-bright\/60:hover {
+  background-color: hsla(245, 75%, 52%, 0.6);
+}
+
+.hover\:bg-blue-bright\/70:hover {
+  background-color: hsla(245, 75%, 52%, 0.7);
+}
+
+.hover\:bg-blue-bright\/80:hover {
+  background-color: hsla(245, 75%, 52%, 0.8);
+}
+
+.hover\:bg-blue-bright\/90:hover {
+  background-color: hsla(245, 75%, 52%, 0.9);
+}
+
+.hover\:bg-blue-bright\/40:hover {
+  background-color: hsla(245, 75%, 52%, 0.4);
+}
+
+.hover\:bg-blue-bright\/50:hover {
+  background-color: hsla(245, 75%, 52%, 0.5);
+}
+
+.hover\:text-blue-dark:hover {
+  --tw-text-opacity: 1;
+  color: hsla(223, 47%, 23%, var(--tw-text-opacity));
+}
+
+.hover\:text-blue-bright\/60:hover {
+  color: hsla(245, 75%, 52%, 0.6);
+}
+
+.hover\:no-underline:hover {
+  text-decoration: none;
+}
+
 @media (min-width: 1024px) {
   .lg\:h-screen {
     height: 100vh;
+  }
+
+  .lg\:max-w-sm {
+    max-width: 24rem;
   }
 
   .lg\:bg-desktop {
